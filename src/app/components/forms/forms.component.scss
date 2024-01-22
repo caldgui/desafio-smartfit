@@ -57,6 +57,10 @@
     right: 0;
 }
 
+.form-group .radio-wrapper input[type= "radio"]{
+    margin-right: 4px;
+}
+
 .form-group .checkbox-wrapper{
     color: var(--light-grey);
     position: relative;
