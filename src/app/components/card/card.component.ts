@@ -16,6 +16,7 @@ export class CardComponent {
   public city: string = '';
 
   public translateContent(content: string): string{
+    if (!content) return '';
     let newContent = content.replace('<p>', '');
     newContent = newContent.replace('</p>', '');
     newContent = newContent.replace('&#8211;', '-');

@@ -39,7 +39,7 @@ export class FormsComponent implements OnInit{
     this.filteredResults = this.filterUnitsService.filter(this.results, showClosed, hour);
     this.getUnitService.setFilteredUnits(this.filteredResults);
 
-    this.submitEvent.emit();
+    this.submitEvent.emit(this.filteredResults);
   }
 
   public onClean(){
