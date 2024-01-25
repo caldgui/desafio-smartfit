@@ -38,5 +38,6 @@ export class AppComponent {
     console.log("onSubmit")
     this.showList.next(true);
     this.unitsList = this.getUnitService.getFilteredUnits();
+    console.log(this.unitsList)
   }
 }
