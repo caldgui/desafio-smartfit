@@ -11,6 +11,7 @@ import { Location } from './types/location.interface';
 import { GetUnitService } from './services/get-unit.service';
 import { CardComponent } from './components/card/card.component';
 import { SubtitleComponent } from './components/subtitle/subtitle.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @Component({
@@ -20,7 +21,8 @@ import { SubtitleComponent } from './components/subtitle/subtitle.component';
     styleUrl: './app.component.scss',
     imports: [CommonModule, 
               RouterOutlet, 
-              HeaderComponent, 
+              HeaderComponent,
+              FooterComponent, 
               FormsComponent,
               CardListComponent,
               CardComponent,
