@@ -3,7 +3,7 @@
         opened: card.opened
     }">{{card.opened ? 'Aberto' : 'Fechado'}}</span>
     <h3>{{card.title}}</h3>
-    <p>{{translateContent(card.content)}} <br>{{city}}</p>
+    <p *ngIf="card.opened">{{translateContent(card.content)}} <br>{{city}}</p>
     <div class="opened-container" *ngIf="card.opened">
         <div class="img-container">
             <img [src]="'./assets/images/png/' + card.mask + '-mask.png'">

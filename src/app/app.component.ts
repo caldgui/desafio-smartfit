@@ -10,6 +10,7 @@ import { BehaviorSubject } from 'rxjs';
 import { Location } from './types/location.interface';
 import { GetUnitService } from './services/get-unit.service';
 import { CardComponent } from './components/card/card.component';
+import { SubtitleComponent } from './components/subtitle/subtitle.component';
 
 
 @Component({
@@ -22,7 +23,8 @@ import { CardComponent } from './components/card/card.component';
               HeaderComponent, 
               FormsComponent,
               CardListComponent,
-              CardComponent, 
+              CardComponent,
+              SubtitleComponent, 
               ReactiveFormsModule, 
               HttpClientModule]
 })
